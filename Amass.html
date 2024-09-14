@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amanten Senior High School</title>
+<style>
+body { 
+	background-color: #007bff; /* blue background */ 
+	color: #ffffff; /* white text */
+}
+.header { 
+	background-color: #0069d9; /* darker blue box */ 
+	padding: 60px; /* increased padding */ 
+	color: #ffffff; /* white text */ 
+	font-family: "Times New Roman", sans-serif; /* Times New Roman font */ 
+	font-size: 28px; /* increased font size */ 
+	border-bottom: 1px solid #ffffff; /* added thin white border */ 
+}
+.logo { 
+	width: 150px; /* increased logo size */ 
+	height: 150px; 
+	margin-right: 30px; /* increased margin */ 
+	float: left; /* logo on the left */ 
+	border-radius: 20%; /* circular logo */ 
+	overflow: hidden; /* crop to circle */ 
+}
+.tabs { 
+	background-color: #0069d9; /* same background as header */ 
+	padding: 30px; /* increased padding */ 
+	margin-top: 60px; /* increased margin */ 
+	color: #ffffff; /* white text */
+}
+.tab-button { 
+	background-color: #0069d9; /* same background as tabs */ 
+	color: #ffffff; /* white text */ 
+	padding: 30px 60px; /* increased padding */ 
+	border: 1px solid #ffffff; /* added thin white border */ 
+	border-radius: 10px; /* increased border radius */ 
+	cursor: pointer; 
+	font-family: "Times New Roman", sans-serif; /* Times New Roman font */ 
+	font-size: 36px; /* increased font size */ 
+	margin-bottom: 20px; /* added margin bottom */ 
+	display: block; /* added display block to put each button on a new line */ 
+}
+.announcement-button { 
+	background-color: #ff0000; /* red background */ 
+	color: #ffffff; /* white text */ 
+	padding: 30px 60px; /* increased padding */ 
+	border: 1px solid #ffffff; /* added thin white border */ 
+	border-radius: 10px; /* increased border radius */ 
+	cursor: pointer; 
+	font-family: "Times New Roman", sans-serif; /* Times New Roman font */ 
+	font-size: 36px; /* increased font size */ 
+	margin-bottom: 20px; /* added margin bottom */ 
+	display: block; /* added display block to put each button on a new line */ 
+	animation: pulse 2s infinite; /* added animation */ 
+}
+@keyframes pulse { 
+	0% { 
+		transform: scale(1); 
+		box-shadow: 0 0 10px #ff0000; 
+	} 
+	50% { 
+		transform: scale(1.1); 
+		box-shadow: 0 0 20px #ff0000; 
+	} 
+	100% { 
+		transform: scale(1); 
+		box-shadow: 0 0 10px #ff0000; 
+	} 
+}
+.bold { 
+	font-weight: bold; /* added bold font weight */ 
+	color: #ffffff; /* white text */
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="https://i.imgur.com/HqZt4WN.jpeg" alt="School Logo" class="logo">
+<h1>Amanten Senior High School</h1>
+<h2>Great AMASS official website</h2>
+</div>
+<div class="tabs">
+<button class="tab-button">Contact Us</button>
+<button class="tab-button" onclick="window.location.href='programs.html'">Programs</button>
+<button class="tab-button">School Gallery</button>
+<button class="tab-button">Check End of Semester Results</button>
+<button class="announcement-button" onclick="window.location.href='announcement.html'">Announcements</button>
+</div>
+<div class="about-school">
+<h2><span class="bold">About</span> Amanten Senior High School</h2>
+<p><span class="bold">Category:</span> B</p>
+<p><span class="bold">Type:</span> Public Senior High School</p>
+<p><span class="bold">Location:</span> Amantin, Atebubu, Bono East Region, Ghana</p>
+<p><span class="bold">Description:</span> Amanten Senior High School is a co-educational institution dedicated to providing quality education to students from diverse backgrounds. With a strong focus on academic excellence, discipline, and character development, our school aims to empower students to become responsible citizens and future leaders.</p>
+<p><span class="bold">Performance Record:</span> Amanten Senior High School has consistently achieved impressive results in national examinations, with a pass rate of 90% in the West African Senior School Certificate Examination (WASSCE) over the past five years.</p>
+<p><span class="bold">Facilities:</span> Our school boasts modern facilities, including state-of-the-art classrooms, science laboratories, a library, and sports facilities.</p>
+<p><span class="bold">Mission:</span> To provide a supportive and inclusive learning environment that fosters academic excellence, creativity, and personal growth.</p>
+<div class="footer">
+<p style="color: #ffffff; font-size: 9px; border-top: 1px solid #ffffff; padding-top: 10px;"> Developed by Victor Selasie Kporha, a student of Amanten Senior High School </p>
+<p style="color: #ffffff; font-size: 10px;"> Copyright &copy; 2024 Amanten Senior High School </p>
+</div>
+</body>
+</html>

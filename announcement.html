@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Announcements</title>
+<style>
+body { 
+	background-color: #007bff; 
+	font-size: 30px; 
+	color: #ffffff;
+}
+.announcement-content { 
+	background-color: #0065BD; 
+	padding: 130px; 
+	border: 1px solid #ffffff; 
+	border-radius: 10px; 
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bold { 
+	font-weight: bold; 
+	color: #ffffff; 
+	font-size: 20px;
+}
+.heading { 
+	border: 5px solid #ffffff; 
+	padding: 10px 30px; 
+	border-radius: 30px; 
+	display: inline-block; 
+	font-size: 50px; 
+	color: #ffffff;
+}
+.animation { 
+	animation: color-change 3s infinite;
+}
+@keyframes color-change { 
+	0% { 
+		color: #ffffff;
+	} 
+	50% { 
+		color: #ff0000;
+	} 
+	100% { 
+		color: #ffffff;
+	}
+}
+.dropdown { 
+	background-color: #0065BD; 
+	padding: 20px; 
+	border: 1px solid #ffffff; 
+	border-radius: 10px; 
+	display: none;
+	font-size: 20px;
+}
+.button { 
+	background-color: #0065BD; 
+	color: #ffffff; 
+	padding: 40px 80px; 
+	border: 1px solid #ffffff; 
+	border-radius: 10px; 
+	cursor: pointer; 
+	font-size: 36px; 
+	margin-bottom: 20px; 
+	display: block;
+}
+.back-button { 
+	background-color: #ffffff; 
+	color: #0065BD; 
+	padding: 40px 80px; 
+	border: 1px solid #0065BD; 
+	border-radius: 10px; 
+	cursor: pointer; 
+	font-size: 36px; 
+	margin-bottom: 20px; 
+	display: block; 
+	float: right;
+}
+.small-text { 
+	font-size: 38px;
+}
+</style>
+</head>
+<body>
+<div class="announcement-content">
+<h2><span class="heading bold animation">[IMPORTANT ANNOUNCEMENTS]</span></h2>
+<button class="button" onclick="toggleDropdown('school-program')">School Program/Activities</button>
+<div id="school-program" class="dropdown">
+<p class="small-text">No information <span class="bold"></span>.</p> 
+<p class="small-text">Kindly come back later to check for updates<span class="bold"></span>.</p> 
+<p class="small-text"><span class="bold">Last updated</span>: 14th September 2024</p> 
+</div>
+<button class="button" onclick="toggleDropdown('inter-school-competitions')">Inter School Competitions</button>
+<div id="inter-school-competitions" class="dropdown">
+<p class="small-text">No information <span class="bold">here</span>.</p> 
+<p class="small-text">Kindly come back later to check for updates<span class="bold"></span>.</p> 
+<p class="small-text"><span class="bold">Last updated </span>:14th September 2024</p> 
+</div>
+<button class="button" onclick="toggleDropdown('nsmq-competitions')">NSMQ Competitions</button>
+<div id="nsmq-competitions" class="dropdown">
+<p class="small-text">No information <span class="bold"></span>.</p> 
+<p class="small-text">Kindly come back later to check for updates <span class="bold">.</span> </p> 
+<p class="small-text"><span class="bold">Last updated</span>:14th September 2024</p> 
+</div>
+<button class="button" onclick="toggleDropdown('examination-vacation')">Examination and Vacation</button>
+<div id="examination-vacation" class="dropdown">
+<p class="small-text">- School resumes on <span class="bold">28th September 2024</span>.</p> 
+<p class="small-text">- Academic activities resume on <span class="bold">30th September 2024</span>.</p> 
+<p class="small-text"><span class="bold">- Note</span>: All students are to report to the school on <span class="bold">28th September 2024</span> to avoid being sanctioned.</p> 
+<p class="small-text"><span class="bold">Great Amass Forever</span></p> 
+<p class="small-text"><span class="bold">Abrempcn mma</span></p>
+</div>
+<button class="back-button" onclick="window.location.href='Amass.html'">Back</button>
+</div>
+<script>
+function toggleDropdown(id) { 
+	var dropdown = document.getElementById(id); 
+	if (dropdown.style.display === "none") { 
+		dropdown.style.display = "block"; 
+	} else { 
+		dropdown.style.display = "none"; 
+	} 
+} 
+</script>
+</body>
+</html>

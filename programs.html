@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amanten Senior High School Programs</title>
+  <style>
+    body {
+      background-color: #007bff;
+      font-family: "Times New Roman", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .programs {
+      background-color: #0069d9;
+      padding: 60px;
+      color: #ffffff;
+      font-size: 46px;
+      text-align: center;
+    }
+    .program-button {
+      background-color: #0069d9;
+      color: #ffffff;
+      padding: 30px 60px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 36px;
+      margin-bottom: 20px;
+      display: block;
+      width: 100%;
+    }
+    .small-heading {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    .logo-container {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 20%;
+      overflow: hidden;
+    }
+    .dropdown {
+      background-color: #0069d9;
+      padding: 20px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      display: none;
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 1.5;
+      width: 100%;
+    }
+    .dropdown b {
+      font-size: inherit;
+    }
+    .back-button {
+      background-color: #0069d9;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 24px;
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="programs">
+    <div class="small-heading">
+      <div class="logo-container">
+        <img src="https://i.imgur.com/HqZt4WN.jpeg" alt="School Logo" class="logo">
+      </div>
+      <div style="display: inline-block; margin-left: 10px;">
+        Amanten Senior High School
+        <br>
+        [Great Amass]
+      </div>
+    </div>
+    <h1>Amanten Senior High School Programs</h1>
+    <button class="program-button" onclick="toggleDropdown('general-arts')">General Arts 1-8</button>
+    <div id="general-arts" class="dropdown">
+      <p><b>General Arts 1-8</b></p>
+      <p>- English Language</p>
+      <p>- Mathematics</p>
+      <p>- Integrated Science</p>
+      <p>- Social Studies</p>
+      <p>- Ghanaian Language</p>
+    </div>
+    <button class="program-button" onclick="toggleDropdown('general-science')">General Science</button>
+    <div id="general-science" class="dropdown" style="font-size: 24px !important;">
+      <p><b>General Science</b></p>
+      <p>- Physics</p>
+      <p>- Elective Mathematics</p>
+      <p>- Chemistry</p>
+      <p>- Biology</p>
+      <p>- Geography</p>
+    </div>
+    <button class="program-button" onclick="toggleDropdown('agriculture')">Agriculture</button>
+    <div id="agriculture" class="dropdown">
+      <p><b>Agriculture</b></p>
+      <p>- Physics</p>
+      <p>- E.Mathematics/ Animal Husbandry</p>
+      <p>- Chemistry</p>
+      <p>- General agriculture</p>
+    </div>
+    <button class="program-button" onclick="toggleDropdown('visual-arts')">Visual Arts</button>
+    <div id="visual-arts" class="dropdown">
+      <p><b>Visual Arts</b></p>
+      <p>- Graphic Design</p>
+      <p>- Painting</p>
+      <p>- Sculpture</p>
+      <p>- Photography</p>
+    </div>
+     <button class="program-button" onclick="toggleDropdown('home-economics')">Home Economics</button>
+    <div id="home-economics" class="dropdown">
+      <p><b>Home Economics</b></p>
+      <p>- Food and Nutrition</p>
+      <p>- Management in Living</p>
+      <p>- Clothing and Textiles</p>
+      <p>- Home Management</p>
+    </div>
+    <button class="program-button" onclick="toggleDropdown('business')">Business</button>
+    <div id="business" class="dropdown">
+      <p><b>Business</b></p>
+      <p>- Accounting</p>
+      <p>- Business Management</p>
+      <p>- Cost Accounting</p>
+      <p>- Economics</p>
+    </div>
+    <a href="Amass.html" class="back-button">Back to Home</a>
+  </div>
+  <script>
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id);
+      if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
